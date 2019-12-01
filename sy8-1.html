@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+     body{
+                background-color:#FFF;
+     }
+     div#kuai{
+               width:640px;
+               height:739.4px;
+               margin-left:431.6px;
+               background-color:#4F4F4F;
+     }
+     p{
+                color:#FFF;
+                font-weight:bold;
+                text-align:center;
+                font-size:24px;
+                margin-top:0;
+     }
+     legend#mes{
+                color:#FFF;
+     }
+     label#text{
+                color:#FFF;
+     }
+     from{
+                margin:0;
+                width:620px;
+                height:1500px;
+     }
+     fieldset#1{
+                width:600px;
+                height:80px;
+                margin:auto;
+     }
+     fieldset#2{
+               width:560px;
+               height:150px;
+     }
+     fieldset#3{
+               width:600px;
+               height:70px;
+     }
+     [type="text"]{
+               height:25px;
+     }
+     [type="email"]{
+               height:25px;
+     }
+     select#area{
+               width:200px;
+               height:25px;
+     }
+     #liang{
+               width:40px;
+               height:25px;  
+     }
+     #huoming{
+               width:400px;
+     }
+</style>
+</head>
+
+<body>
+<div id="kuai">
+<from>
+<p>增加快递信息</p>
+  <fieldset id="1"> 
+   <tr>
+      <td>
+      <legend id="mes">发货单</legend><br/>
+      <label id="text">&nbsp;&nbsp;发货人：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fahuoren"></label>
+      </td>
+      <td>
+      <label id="text">&nbsp;&nbsp;地址：&nbsp;&nbsp;&nbsp;<input type="text" name="adress"></label><br/><br/>
+      </td>
+      <td>
+      <label id="text">&nbsp;&nbsp;电话：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="telephone"></label>
+      </td>
+      <td>
+      <label id="text">&nbsp;&nbsp;邮编：&nbsp;&nbsp;&nbsp;<input type="email" name="email"></label><br/><br/>
+      </td>
+   </tr>
+  </fieldset><br/>
+  <fieldset id="2">
+   <tr>
+      <td>
+      <legend id="mes">收货单</legend><br/>
+      <label id="text">&nbsp;&nbsp;收货人：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="shouhuoren">&nbsp;&nbsp</label>
+      </td>
+      <td>
+      <label id="text">&nbsp;&nbsp;地址：<input type="text" name="adress1"></label><br/><br/>
+      </td>
+      <td>
+      <label id="text">&nbsp;&nbsp;电话：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone"></label>
+      </td>
+      <td>
+      <label id="text">&nbsp;&nbsp;&nbsp;&nbsp;邮编：<input type="email" name="email1"></label><br/><br/>
+      </td>
+      <td>
+      <label id="text">&nbsp;&nbsp;地区：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="area">
+         <option>北京</option>
+         <option>杭州</option>
+         <option>上海</option>
+         <option>武汉</option>
+         <option>......</option>
+      </select></label><br/><br/>
+      </td>
+      <label id="text">&nbsp;&nbsp;包装：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td><input type="checkbox" name="zhixiang">纸箱</td></label><label id="text"><td><input type="checkbox" name="muxiang">木箱</td></label><label id="text"><td><input type="checkbox" name="kuaididai">快递袋</td></label><label id="text"><td><input type="checkbox" name="qita">其他</td><br/><br/></label>
+      <label id="text">&nbsp;&nbsp;付款方式：<td><input type="radio" name="xianjin">现金</td></label><label id="text"><td><input type="radio" name="zhifubao">支付宝</td></label><label id="text"><td><input type="radio" name="wangyin">网银</td></label><label id="text"><td><input type="radio" name="ATM">ATM</td></label><br/>
+   </tr>
+ </fieldset><br/>
+ <fieldset id="3">  
+   <tr>
+      <td>
+      <legend id="mes">货物信息</legend><br/>
+      <label id="text">&nbsp;&nbsp;货物名称：&nbsp;<input type="text" name="huowumingcheng" id="huoming"></label><br/><br/>
+      </td>
+      <td><label id="text">&nbsp;&nbsp;数量：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="shuliang" id="liang"></label></td><td><label id="text">&nbsp;&nbsp;重量：<input type="text" name="zhongliang" id="liang"></label></td><td><label id="text">&nbsp;&nbsp;发货时间：<input type="text" name="shijian"></label></td><br/><br/>
+   </tr>
+ </fieldset><br/>
+   <center><input type="submit" name="submit" value="确定"><input type="reset" name="reset" value="取消"></center>
+</from>
+</div>
+</body>
+</html>
